@@ -63,9 +63,9 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="500dp">
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/recyclerViewHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
