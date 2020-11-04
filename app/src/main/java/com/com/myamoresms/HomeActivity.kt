@@ -16,6 +16,9 @@ class HomeActivity : AppCompatActivity() {
         val listSMS = listOf(
                 SMSModel(day = "Monday",time = "13:00", date = "02 Januari 2020",pesan = "Hallo Apa Kabar",
                         penerima = listOf(Penerima(idPenerima = "1", nomerPenerima = "089612345678", status = "Delivered",namaPenerima = "Andi"))
+                ),
+                SMSModel(day = "Monday",time = "11:00", date = "02 Januari 2020",pesan = "Hallo Apa Kabar",
+                        penerima = listOf(Penerima(idPenerima = "1", nomerPenerima = "089612345678", status = "Delivered",namaPenerima = "Andi"))
                 )
         )
 

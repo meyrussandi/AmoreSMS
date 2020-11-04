@@ -60,8 +60,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/bg_home"
         android:paddingTop="50dp"
-        android:paddingLeft="24dp"
-        android:paddingRight="24dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
         android:layout_width="match_parent"
         android:layout_height="500dp">
         <androidx.recyclerview.widget.RecyclerView
@@ -77,6 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/white"
         android:text="Mulai Pesan"
+        android:textSize="16sp"
         android:background="@drawable/btn_mulai_pesan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
