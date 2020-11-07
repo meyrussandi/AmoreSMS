@@ -29,6 +29,18 @@ class HomeActivity : AppCompatActivity() {
                 ),
                 SMSModel(day = "Monday", time = "11:00", date = "02 Januari 2020", pesan = "Hallooooo",
                         penerima = listOf(Penerima(idPenerima = "1", nomerPenerima = "089612345678", status = "Delivered", namaPenerima = "Andi"))
+                ),
+                SMSModel(day = "Tuesday", time = "09:00", date = "03 Januari 2020", pesan = "Hallooooo2",
+                        penerima = listOf(Penerima(idPenerima = "1", nomerPenerima = "089612345678", status = "Delivered", namaPenerima = "Andi"))
+                ),
+                SMSModel(day = "Wednesday", time = "13:00", date = "02 Januari 2020", pesan = "Hallooooo3",
+                        penerima = listOf(Penerima(idPenerima = "1", nomerPenerima = "089612345678", status = "Delivered", namaPenerima = "Andi"))
+                ),
+                SMSModel(day = "Thursday", time = "12:00", date = "02 Januari 2020", pesan = "Hallooooo4",
+                        penerima = listOf(Penerima(idPenerima = "1", nomerPenerima = "089612345678", status = "Delivered", namaPenerima = "Andi"))
+                ),
+                SMSModel(day = "Friday", time = "14:00", date = "02 Januari 2020", pesan = "Hallooooo5",
+                        penerima = listOf(Penerima(idPenerima = "1", nomerPenerima = "089612345678", status = "Delivered", namaPenerima = "Andi"))
                 )
         )
 
