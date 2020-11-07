@@ -1,16 +1,23 @@
 package com.com.myamoresms
 
-data class SMSModel (
-        val day: String? = null,
-        val time: String? = null,
-        val date: String? = null,
-        val pesan: String? = null,
-        val penerima: List<Penerima>? = null
-)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
+data class SMSModel (
+        var day: String? = null,
+        var time: String? = null,
+        var date: String? = null,
+        var pesan: String? = null,
+        var penerima: List<Penerima>? = null
+):Parcelable
+
+@Parcelize
 data class Penerima (
-        val idPenerima: String? = null,
-        val nomerPenerima: String? = null,
-        val status: String? = null,
-        val namaPenerima: String? = null
-)
+        var idPenerima: String? = null,
+        var nomerPenerima: String? = null,
+        var status: String? = null,
+        var namaPenerima: String? = null
+):Parcelable{
+
+}

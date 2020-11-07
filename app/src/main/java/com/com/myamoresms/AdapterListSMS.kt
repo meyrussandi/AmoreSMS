@@ -9,14 +9,29 @@ import androidx.recyclerview.widget.RecyclerView
 
 class AdapterListSMS(private val listSMS:List<SMSModel>) : RecyclerView.Adapter<Holder>() {
 
+    private lateinit var onItemClickCallback: OnItemClickCallback
+
+    fun setOnItemClickCallBack(
+            onItemClickCallback: OnItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback
+    }
+
     override fun getItemCount(): Int = listSMS.size
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
         holder.sms(listSMS[position])
+        holder.itemView.setOnClickListener(){
+            onItemClickCallback.onItemClick(listSMS[holder.adapterPosition])
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         return Holder(LayoutInflater.from(parent.context).inflate(R.layout.list_sms, parent,false))
+    }
+
+
+    interface OnItemClickCallback {
+        fun onItemClick(dataSMSModel: SMSModel )
     }
 
 }

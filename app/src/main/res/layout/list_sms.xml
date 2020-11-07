@@ -6,19 +6,39 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
+        android:id="@+id/linview"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="#FBFBFB"
+        android:background="@drawable/bglistsms"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:background="@color/red"
-            android:layout_margin="8dp"
-            android:layout_width="80dp"
-            android:layout_height="80dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_margin="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/imgrecychome"
+                android:src="@drawable/calender"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+            <TextView
+                android:text="HARI"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:id="@+id/hari"
+                app:layout_constraintStart_toStartOf="@id/imgrecychome"
+                app:layout_constraintEnd_toEndOf="@id/imgrecychome"
+                app:layout_constraintTop_toTopOf="@id/imgrecychome"
+                app:layout_constraintBottom_toBottomOf="@id/imgrecychome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
         <LinearLayout
             android:layout_margin="8dp"
             android:layout_gravity="center"
