@@ -8,11 +8,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.appbar.CollapsingToolbarLayout
 
+@SuppressWarnings("ConstantConditions")
 class SmsDetailActivity : AppCompatActivity() {
     private lateinit var smsDetailsAdapter : AdapterSMSDetails
 
@@ -32,7 +35,6 @@ class SmsDetailActivity : AppCompatActivity() {
         val penerimaSMS = bundle?.getParcelableArrayList<Penerima>(EXTRA_PENERIMA)
 
         val recycler = findViewById<RecyclerView>(R.id.recyclerViewDetail)
-        recycler.isNestedScrollingEnabled = false
         smsDetailsAdapter = AdapterSMSDetails(penerimaSMS)
         recycler.apply {
             layoutManager = LinearLayoutManager(this@SmsDetailActivity)
