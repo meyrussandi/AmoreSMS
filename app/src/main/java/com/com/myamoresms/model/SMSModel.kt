@@ -18,6 +18,4 @@ data class Penerima (
         var nomerPenerima: String? = null,
         var status: String? = null,
         var namaPenerima: String? = null
-):Parcelable{
-
-}
+):Parcelable
