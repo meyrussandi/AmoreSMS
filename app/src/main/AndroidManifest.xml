@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyAmoreSMS">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".activity.HomeActivity"/>
         <activity
-            android:name=".SplashActivity"
+            android:name=".activity.SplashActivity"
             android:label="@string/title_amoreSMS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,12 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PesanActivity" />
-        <activity android:name=".SmsDetailActivity" />
-        <activity android:name=".VerifikasiOtpActivity" />
-        <activity android:name=".InputPhoneNumberActivity" />
-        <activity android:name=".GetStartedActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".activity.PesanActivity" />
+        <activity android:name=".activity.SmsDetailActivity" />
+        <activity android:name=".activity.VerifikasiOtpActivity" />
+        <activity android:name=".activity.InputPhoneNumberActivity" />
+        <activity android:name=".activity.GetStartedActivity" />
+        <activity android:name=".activity.MainActivity"/>
     </application>
 
 </manifest>

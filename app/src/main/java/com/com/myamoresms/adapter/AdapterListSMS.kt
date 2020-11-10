@@ -1,11 +1,12 @@
-package com.com.myamoresms
+package com.com.myamoresms.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.com.myamoresms.R
+import com.com.myamoresms.model.SMSModel
 
 class AdapterListSMS(private val listSMS:List<SMSModel>) : RecyclerView.Adapter<Holder>() {
 
@@ -31,7 +32,7 @@ class AdapterListSMS(private val listSMS:List<SMSModel>) : RecyclerView.Adapter<
 
 
     interface OnItemClickCallback {
-        fun onItemClick(dataSMSModel: SMSModel )
+        fun onItemClick(dataSMSModel: SMSModel)
     }
 
 }

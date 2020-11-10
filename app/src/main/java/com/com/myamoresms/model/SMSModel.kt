@@ -1,4 +1,4 @@
-package com.com.myamoresms
+package com.com.myamoresms.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize

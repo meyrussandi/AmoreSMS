@@ -1,34 +1,23 @@
-package com.com.myamoresms
+package com.com.myamoresms.activity
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Parcelable
 import android.util.Log
-import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.appbar.CollapsingToolbarLayout
-import kotlinx.android.synthetic.main.activity_home.*
-import java.util.*
+import com.com.myamoresms.model.Penerima
+import com.com.myamoresms.R
+import com.com.myamoresms.model.SMSModel
+import com.com.myamoresms.adapter.AdapterListSMS
 import kotlin.collections.ArrayList
 
-@SuppressWarnings("ConstantConditions")
 class HomeActivity : AppCompatActivity() {
     private lateinit var smsAdapter : AdapterListSMS
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
-//        val toolbar = findViewById<Toolbar>(R.id.toolbar)
-//        setSupportActionBar(toolbar);
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-
-        val collapsingToolbarLayout = findViewById<CollapsingToolbarLayout>(R.id.collapsing_toolbar)
-        collapsingToolbarLayout.title = getString(R.string.title_amoreSMS)
 
         val recycler = findViewById<RecyclerView>(R.id.recyclerViewHome)
 

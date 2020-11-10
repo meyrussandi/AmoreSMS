@@ -1,4 +1,4 @@
-package com.com.myamoresms;
+package com.com.myamoresms.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.com.myamoresms.R;
 
 public class SplashActivity extends AppCompatActivity {
     Animation app_spash;

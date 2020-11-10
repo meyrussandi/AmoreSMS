@@ -5,7 +5,7 @@
     android:background="@drawable/bgsplash"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SmsDetailActivity">
+    tools:context=".activity.SmsDetailActivity">
 
     <ImageView
         android:id="@+id/back"

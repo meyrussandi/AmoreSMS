@@ -1,19 +1,16 @@
-package com.com.myamoresms
+package com.com.myamoresms.activity
 
 import android.os.Bundle
-import android.os.Parcelable
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.appbar.CollapsingToolbarLayout
+import com.com.myamoresms.model.Penerima
+import com.com.myamoresms.R
 
 @SuppressWarnings("ConstantConditions")
 class SmsDetailActivity : AppCompatActivity() {

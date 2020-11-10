@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgsplash"
     android:fitsSystemWindows="true"
-    tools:context=".HomeActivity">
+    tools:context=".activity.HomeActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
