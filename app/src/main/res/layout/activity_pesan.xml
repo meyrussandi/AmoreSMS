@@ -10,7 +10,7 @@
         android:id="@+id/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/ic_back"
+        android:background="@drawable/ic_baseline_arrow_back_blue"
         android:layout_width="50dp"
         android:layout_margin="8dp"
         android:layout_height="50dp"/>
@@ -21,16 +21,16 @@
             app:layout_constraintStart_toStartOf="parent"
             android:inputType="textMultiLine"
             android:lines="8"
-            android:gravity="top|left"
+            android:gravity="top|start"
             android:maxLines="10"
             android:scrollbars="vertical"
             android:background="@drawable/bg_input_text"
             android:textColor="@color/black"
-            android:text="Add text.."
+            android:hint="Add text.."
             android:padding="8dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:layout_marginRight="80dp"
+            android:layout_marginEnd="80dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <Button
@@ -44,10 +44,10 @@
 
     <TextView
         android:id="@+id/tv_receiver"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         android:layout_marginTop="24dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintTop_toBottomOf="@id/inputText"
         app:layout_constraintStart_toStartOf="parent"
         android:text="Receiver message"
@@ -79,12 +79,13 @@
     </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linear_btn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/recyclerView"
+        android:id="@+id/recyclerViewSendMessages"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="0dp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

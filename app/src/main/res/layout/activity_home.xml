@@ -64,9 +64,12 @@
         android:layout_margin="10dp"
         app:layout_anchor="@+id/recyclerViewHome"
         app:layout_anchorGravity="bottom|right|end"
-        android:src="@drawable/ic_baseline_send_24"
+        android:src="@drawable/ic_baseline_send_white"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:backgroundTint="@color/blue_primary"
+        android:id="@+id/fabHome"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/floatingactionbuttonhome">
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
 

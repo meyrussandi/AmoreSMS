@@ -10,6 +10,7 @@ import com.com.myamoresms.model.Penerima
 import com.com.myamoresms.R
 import com.com.myamoresms.model.SMSModel
 import com.com.myamoresms.adapter.AdapterListSMS
+import kotlinx.android.synthetic.main.activity_home.*
 import kotlin.collections.ArrayList
 
 class HomeActivity : AppCompatActivity() {
@@ -55,7 +56,9 @@ class HomeActivity : AppCompatActivity() {
         }
 
         setListClickAction()
-
+        fabHome.setOnClickListener {
+            startActivity(Intent(this,PesanActivity::class.java))
+        }
     }
 
     private fun setListClickAction(){

@@ -8,4 +8,5 @@
     <string name="hello_world">Hello Square World!</string>
     <string name="hide">Show/Hide ActionBar when scroll</string>
     <string name="paralax">ActionBar Parallax Animations</string>
+    <string name="floatingactionbuttonhome">FloatingActionButtonHome</string>
 </resources>

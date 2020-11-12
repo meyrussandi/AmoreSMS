@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.com.myamoresms.model.Penerima
 import com.com.myamoresms.R
+import com.com.myamoresms.adapter.AdapterSMSDetails
 
 @SuppressWarnings("ConstantConditions")
 class SmsDetailActivity : AppCompatActivity() {
@@ -39,37 +40,4 @@ class SmsDetailActivity : AppCompatActivity() {
             setHasFixedSize(true)
         }
     }
-}
-
-class AdapterSMSDetails(private var listSmsDetails: List<Penerima>?) : RecyclerView.Adapter<HolderSmsDetails>(){
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HolderSmsDetails {
-        return HolderSmsDetails(LayoutInflater.from(parent.context).inflate(R.layout.list_sms_detail, parent, false))
-    }
-
-    override fun onBindViewHolder(holder: HolderSmsDetails, position: Int) {
-        holder.penerimaSms(listSmsDetails!![position])
-    }
-
-    override fun getItemCount(): Int {
-        return listSmsDetails?.size!!
-    }
-
-}
-
-class  HolderSmsDetails(view: View) : RecyclerView.ViewHolder(view){
-    private val tvNamaPenerima = view.findViewById<TextView>(R.id.namaPenerima)
-    private val tvNomer = view.findViewById<TextView>(R.id.noPenerima)
-    private val btnStatus = view.findViewById<Button>(R.id.statusPesan)
-
-    fun penerimaSms(penerima: Penerima){
-        tvNamaPenerima.text = penerima.namaPenerima
-        tvNomer.text = penerima.nomerPenerima
-        if (penerima.status.equals("error",true)){
-            btnStatus.setBackgroundResource(R.drawable.ic_error)
-        }else{
-            btnStatus.setBackgroundResource(R.drawable.ic_delivered)
-        }
-    }
-
 }
